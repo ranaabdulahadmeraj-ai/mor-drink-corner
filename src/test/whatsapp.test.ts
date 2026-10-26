@@ -36,7 +36,7 @@ describe("WhatsApp order generation", () => {
   it("URL-encodes the generated message", () => {
     const url = buildWhatsAppUrl(order);
     expect(url).not.toMatch(/\s/);
-    expect(decodeURIComponent(url.split("?text=")[1])).toBe(
+    expect(decodeURIComponent(url.split("?text=")[1]!)).toBe(
       buildOrderMessage(order),
     );
   });

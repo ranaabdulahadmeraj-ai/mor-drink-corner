@@ -7,7 +7,7 @@ export type OrderDetails = {
   orderType: "dine-in" | "takeaway";
   name: string;
   phone: string;
-  notes?: string;
+  notes?: string | undefined;
 };
 
 /**
