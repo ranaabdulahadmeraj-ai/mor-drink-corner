@@ -169,6 +169,22 @@ export const MENU_ITEMS: MenuItem[] = [
     image: "loaded-fries.jpg",
     price: null,
   },
+  {
+    id: "roast-chicken-rice",
+    name: "Roast Chicken with Rice",
+    description: "Whole roasted chicken served over spiced rice.",
+    categories: ["fast-food"],
+    image: "roast-chicken-rice.jpg",
+    price: null,
+  },
+  {
+    id: "kabab-stuffed-pizza",
+    name: "Kabab Stuffed Pizza",
+    description: "Stuffed-crust pizza topped with seek kabab and creamy sauce.",
+    categories: ["fast-food"],
+    image: "kabab-stuffed-pizza.jpg",
+    price: null,
+  },
 ];
 
 export function formatPrice(item: MenuItem): string {
